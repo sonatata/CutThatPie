@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CutController : MonoBehaviour {
 
-    public GameObject half;
-    public GameObject qrtr;
-    public GameObject eth;
+    //public GameObject half;
+    //public GameObject qrtr;
+    //public GameObject eth;
+    public GameObject roundPiePrefab;
     bool flag = false;
     //public GameObject tool_location;
 	// Use this for initialization
@@ -16,24 +17,24 @@ public class CutController : MonoBehaviour {
 	void FixedUpdate () {
         if (!flag)
         {
-            if (Master.cut_frac == "1/2")
-            {
+            //if (Master.cut_frac == "1/2")
+            //{
 
-                Instantiate(half, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
-                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-                //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
-                flag = true;
-            }
-            if(Master.cut_frac == "1/4")
-            {
-                Instantiate(qrtr, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
-                flag = true;
-            }
-            if (Master.cut_frac == "1/8")
-            {
-                Instantiate(eth, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
-                flag = true;
-            }
+            //    Instantiate(half, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
+            //    //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+            //    //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            //    flag = true;
+            //}
+            //if(Master.cut_frac == "1/4")
+            //{
+            //    Instantiate(qrtr, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
+            //    flag = true;
+            //}
+            //if (Master.cut_frac == "1/8")
+            //{
+            //    Instantiate(eth, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
+            //    flag = true;
+            //}
 
         }
 
@@ -44,10 +45,12 @@ public class CutController : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("pie"))
         {
-			//Application.LoadLevel("_Scenes/minigame");
-			SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
 
-            Destroy(other.gameObject);
+            Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
+            //Application.LoadLevel("_Scenes/minigame");
+            //SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
+
+            //Destroy(other.gameObject);
             //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
         }
 
