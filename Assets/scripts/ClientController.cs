@@ -19,7 +19,7 @@ public class ClientController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = Vector2.MoveTowards(new Vector2(transform.position.x,
-            transform.position.y), aPosition1, 3 * Time.deltaTime);
+            transform.position.y), aPosition1, Time.deltaTime);
 	}
 
     private void OnTriggerEnter2D(Collider2D other)

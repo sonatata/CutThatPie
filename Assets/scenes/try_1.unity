@@ -783,8 +783,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1537047714}
   - component: {fileID: 1537047713}
-  - component: {fileID: 1537047712}
   - component: {fileID: 1537047715}
+  - component: {fileID: 1537047712}
   m_Layer: 0
   m_Name: client
   m_TagString: Untagged
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -5, y: 2}
+  aPosition1: {x: -7, y: 2}
   plate: {fileID: 1839095085}
   fraction: {fileID: 688540845}
   pie: {fileID: 1305134167}
