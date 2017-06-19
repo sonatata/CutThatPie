@@ -2508,9 +2508,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go: {fileID: 1804868259389858}
-  half: {fileID: 0}
-  qrtr: {fileID: 0}
-  eth: {fileID: 0}
+  half: {fileID: 1005691835007794, guid: a812c096ad8edf746b79ade40dee91ee, type: 2}
+  qrtr: {fileID: 1891445087345418, guid: 5a609c7a9ea71c5439126d2923a089da, type: 2}
+  eth: {fileID: 1891445087345418, guid: 9a186b24cced05a4789765ad15c04065, type: 2}
 --- !u!212 &212012017201045960
 SpriteRenderer:
   m_ObjectHideFlags: 1

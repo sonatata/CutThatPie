@@ -103,26 +103,28 @@ public class PlayerController : MonoBehaviour {
             {
                 if (other.name == "1/2")
                 {
-
-                    Instantiate(half, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
+                    Destroy(go);
+                    Instantiate(half, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
                     //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
                     //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
                     //flag = true;
                 }
                 if (other.name == "1/4")
                 {
-                    Instantiate(qrtr, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
+                    Destroy(go);
+                    Instantiate(qrtr, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
                     //flag = true;
                 }
                 if (other.name == "1/8")
                 {
-                    Instantiate(eth, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
+                    Destroy(go);
+                    Instantiate(eth, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
                     //flag = true;
                 }
                 // do something with master //hlf
                 //Master.cut_frac = other.gameObject.name;
                 //Master.is_cut = true;
-                //Destroy(go);
+                
             }
             chkpts += 1;
         }

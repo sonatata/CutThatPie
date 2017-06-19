@@ -46,11 +46,16 @@ public class CutController : MonoBehaviour {
         if (other.gameObject.CompareTag("pie"))
         {
 
+            //creates a pie module to cut on 
             Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
+
             //Application.LoadLevel("_Scenes/minigame");
             //SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
 
-            //Destroy(other.gameObject);
+            //destroys pie colliding with knife 
+            Destroy(other.gameObject);
+
+
             //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
         }
 
