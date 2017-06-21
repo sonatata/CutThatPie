@@ -11,6 +11,8 @@ TagManager:
   - 8th
   - checkpoint
   - Pick Up
+  - Draggable
+  - wall
   layers:
   - Default
   - TransparentFX

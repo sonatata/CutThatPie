@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClientController : MonoBehaviour {
 
@@ -11,10 +12,23 @@ public class ClientController : MonoBehaviour {
     public GameObject pie;
     public GameObject thanks;
     public GameObject wrong;
+    public string want;
+
+    public Text countText;
+    private static int count;
+    private bool ded;
+
+    public Text winText;
+    public Text loseText;
     // Use this for initialization
     void Start () {
+        count = 0;
+        ded = false;
+        SetCountText();
+        //winText.text = "";
+        //loseText.text = "";
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,23 +38,96 @@ public class ClientController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //if (other.gameObject.CompareTag("half"))
-		if (Master.cut_frac == "1/2")
+        if (want == "half")
         {
-            Destroy(other.gameObject);
-            Destroy(fraction.gameObject);
-            Destroy(pie.gameObject);
-            //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-            Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            if (other.gameObject.CompareTag("half"))
+            //if (Master.cut_frac == "1/2")
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                count = count + 1;
+                SetCountText();
 
-        } else
+            }
+            else if (other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("8th"))
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
+        } else if(want == "qrtr")
         {
-            Destroy(other.gameObject);
-            Destroy(fraction.gameObject);
-            Destroy(pie.gameObject);
-            //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-            Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            if (other.gameObject.CompareTag("qrtr"))
+            //if (Master.cut_frac == "1/2")
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                count = count + 1;
+                SetCountText();
+
+            }
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("8th"))
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
+        }
+        else if (want == "8t")
+        {
+            if (other.gameObject.CompareTag("8th"))
+            //if (Master.cut_frac == "1/2")
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                count = count + 1;
+                SetCountText();
+            }
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr"))
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
         }
 
+
+    }
+
+    void SetCountText()
+    {
+        countText.text = "PIES COLLECTED " + count.ToString();
+        if(count == 2)
+        {
+            //winText.text = "You Win!";
+            SceneManager.LoadScene(4);
+        }
     }
 }
