@@ -13,6 +13,8 @@ TagManager:
   - Pick Up
   - Draggable
   - wall
+  - invisible
+  - knife
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/scenes/try_1.unity
     guid: ac21b872d596437488f25341c246cc99
   - enabled: 0
-    path: Assets/_Scenes/minigame.unity
+    path: 
     guid: 3c2fb26f85c9aac42938c7345ea83f91
   - enabled: 1
     path: Assets/scenes/cut.unity
