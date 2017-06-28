@@ -88,6 +88,7 @@
     <Compile Include="Assets\scripts\PlayerController.cs" />
     <Compile Include="Assets\scripts\Rotate.cs" />
     <Compile Include="Assets\scripts\exit.cs" />
+    <Compile Include="Assets\scripts\gamescript.cs" />
     <Compile Include="Assets\scripts\newgame.cs" />
     <Compile Include="Assets\scripts\pausebutton.cs" />
     <Compile Include="Assets\scripts\slice_display.cs" />

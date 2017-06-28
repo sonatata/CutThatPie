@@ -27,7 +27,7 @@ public class CutController : MonoBehaviour {
     }
     void OnMouseDown()
     {
-        transform.localScale *= 1.1F;
+        //transform.localScale *= 1.1F;
     }
 
     void OnMouseUp()
@@ -74,24 +74,24 @@ public class CutController : MonoBehaviour {
     }
 
 
-    //private void OnTriggerEnter2D (Collider2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Draggable"))
-    //    {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("cuttingBoard"))
+        {
 
-    //        //creates a pie module to cut on 
-    //        Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
+            //creates a pie module to cut on 
+            Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
 
-    //        //Application.LoadLevel("_Scenes/minigame");
-    //        //SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
+            //Application.LoadLevel("_Scenes/minigame");
+            //SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
 
-    //        //destroys pie colliding with knife 
-    //        Destroy(other.gameObject);
+            //destroys pie colliding with knife 
+            //Destroy(other.gameObject);
 
 
-    //        //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
-    //    }
+            //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
+        }
 
-        
-    //}
+
+    }
 }
