@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: 
     guid: 3c2fb26f85c9aac42938c7345ea83f91
   - enabled: 1
-    path: Assets/scenes/cut.unity
-    guid: d4962cded80065744a1643967eeb6032
-  - enabled: 1
     path: Assets/scenes/gameover.unity
     guid: 5f8ef8da76970f14a89bbd34396dc59d
+  - enabled: 1
+    path: Assets/scenes/cut.unity
+    guid: d4962cded80065744a1643967eeb6032
   - enabled: 1
     path: Assets/scenes/youwin.unity
     guid: febd5036059476345a75a1dcb8c5897f
