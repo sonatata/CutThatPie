@@ -2940,7 +2940,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3115,7 +3115,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3265,7 +3265,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3365,7 +3365,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3440,7 +3440,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3490,7 +3490,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4397,6 +4397,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08cda8a67d806e4fba79c9b7da71dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  half: {fileID: 1005691835007794, guid: a812c096ad8edf746b79ade40dee91ee, type: 2}
+  qrtr: {fileID: 1891445087345418, guid: 5a609c7a9ea71c5439126d2923a089da, type: 2}
+  eth: {fileID: 1891445087345418, guid: 9a186b24cced05a4789765ad15c04065, type: 2}
+  go: {fileID: 1804868259389858}
   knife: {fileID: 1812785263585102}
 --- !u!114 &114845970783137178
 MonoBehaviour:

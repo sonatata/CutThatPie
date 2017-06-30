@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     float speed = 3.0f;
     public GameObject go;
@@ -29,21 +30,22 @@ public class PlayerController : MonoBehaviour {
     public static int count = 0;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         TrailRenderer tr = this.GetComponent<TrailRenderer>();
         tr.sortingLayerName = "foreground";
 
         script = GetComponent<CutController>();
 
 
-        
+
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        
-        
+
+
+
     }
 
 
