@@ -13,6 +13,7 @@ public class ClientController : MonoBehaviour {
     public GameObject thanks;
     public GameObject wrong;
     public string want;
+    public int speed;
 
     public Text countText;
     private static int count;
@@ -23,6 +24,7 @@ public class ClientController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         count = 0;
+        
         ded = false;
         SetCountText();
         //winText.text = "";
@@ -33,7 +35,7 @@ public class ClientController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = Vector2.MoveTowards(new Vector2(transform.position.x,
-            transform.position.y), aPosition1, Time.deltaTime);
+            transform.position.y), aPosition1, Time.deltaTime*speed);
 	}
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -91,7 +93,7 @@ public class ClientController : MonoBehaviour {
 
             }
         }
-        else if (want == "8t")
+        else if (want == "8th")
         {
             if (other.gameObject.CompareTag("8th"))
             //if (Master.cut_frac == "1/2")
@@ -105,6 +107,58 @@ public class ClientController : MonoBehaviour {
                 SetCountText();
             }
             else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr"))
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
+        }
+        else if (want == "3/8")
+        {
+            if (other.gameObject.CompareTag("3/8"))
+            //if (Master.cut_frac == "1/2")
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                count = count + 1;
+                SetCountText();
+            }
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("5/8"))
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
+        }
+        else if (want == "5/8")
+        {
+            if (other.gameObject.CompareTag("5/8"))
+            //if (Master.cut_frac == "1/2")
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                count = count + 1;
+                SetCountText();
+            }
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("3/8"))
             {
                 Destroy(other.gameObject);
                 Destroy(fraction.gameObject);

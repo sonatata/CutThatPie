@@ -8,7 +8,9 @@ public class gamescript : MonoBehaviour {
 	public GameObject half;
 	public GameObject qrtr;
 	public GameObject eth;
-	public GameObject go;
+    public GameObject threeeth;
+    public GameObject fiveeth;
+    public GameObject go;
 	Vector3 screenPoint;
 	Vector3 offset;
 	private List<GameObject> objlist = new List<GameObject>();
@@ -80,12 +82,24 @@ public class gamescript : MonoBehaviour {
 						Instantiate(eth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
 						//flag = true;
 					}
-					// do something with master //hlf
-					//Master.cut_frac = other.gameObject.name;
-					//Master.is_cut = true;
+                if (collision.gameObject.name == "3/8")
+                {
+                    Destroy(go);
+                    Instantiate(threeeth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
+                    //flag = true;
+                }
+                if (collision.gameObject.name == "5/8")
+                {
+                    Destroy(go);
+                    Instantiate(fiveeth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
+                    //flag = true;
+                }
+                // do something with master //hlf
+                //Master.cut_frac = other.gameObject.name;
+                //Master.is_cut = true;
 
-				//chkpts += 1;
-			}
+                //chkpts += 1;
+            }
 		
 		}
 

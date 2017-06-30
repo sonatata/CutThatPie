@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 114882677229426304}
   - component: {fileID: 50811382243568524}
   m_Layer: 0
-  m_Name: 1/8
+  m_Name: 5/8
   m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,7 +1162,7 @@ GameObject:
   - component: {fileID: 61675507877280660}
   - component: {fileID: 114356345332345438}
   m_Layer: 0
-  m_Name: 1/8
+  m_Name: 3/8
   m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4400,6 +4400,8 @@ MonoBehaviour:
   half: {fileID: 1005691835007794, guid: a812c096ad8edf746b79ade40dee91ee, type: 2}
   qrtr: {fileID: 1891445087345418, guid: 5a609c7a9ea71c5439126d2923a089da, type: 2}
   eth: {fileID: 1891445087345418, guid: 9a186b24cced05a4789765ad15c04065, type: 2}
+  threeeth: {fileID: 1005691835007794, guid: 9dc04c6b1846d65428f9b138bff62eb1, type: 2}
+  fiveeth: {fileID: 1005691835007794, guid: e47c1b6d20c76af4f8f7535cc9277e67, type: 2}
   go: {fileID: 1804868259389858}
   knife: {fileID: 1812785263585102}
 --- !u!114 &114845970783137178

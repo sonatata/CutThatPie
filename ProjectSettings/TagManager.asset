@@ -16,6 +16,8 @@ TagManager:
   - invisible
   - knife
   - cuttingBoard
+  - 3/8
+  - 5/8
   layers:
   - Default
   - TransparentFX
