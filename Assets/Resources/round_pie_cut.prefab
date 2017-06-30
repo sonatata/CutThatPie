@@ -218,7 +218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1194041464735948
 GameObject:
   m_ObjectHideFlags: 1
@@ -374,9 +374,10 @@ GameObject:
   - component: {fileID: 212420775345476588}
   - component: {fileID: 61555152168906876}
   - component: {fileID: 114882677229426304}
+  - component: {fileID: 50811382243568524}
   m_Layer: 0
-  m_Name: trace (27)
-  m_TagString: invisible
+  m_Name: 1/8
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,8 +430,8 @@ GameObject:
   - component: {fileID: 61368107377116510}
   - component: {fileID: 114519775628070604}
   m_Layer: 0
-  m_Name: trace (15)
-  m_TagString: invisible
+  m_Name: 1/4
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -590,8 +591,8 @@ GameObject:
   - component: {fileID: 61345150154533678}
   - component: {fileID: 114158117987261260}
   m_Layer: 0
-  m_Name: trace (18)
-  m_TagString: invisible
+  m_Name: 1/8
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,7 +717,7 @@ GameObject:
   - component: {fileID: 61668587774896438}
   - component: {fileID: 114629197581403118}
   m_Layer: 0
-  m_Name: trace (10)
+  m_Name: trace
   m_TagString: invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -752,8 +753,8 @@ GameObject:
   - component: {fileID: 61638824378572412}
   - component: {fileID: 114966501355374778}
   m_Layer: 0
-  m_Name: trace (7)
-  m_TagString: invisible
+  m_Name: 1/2
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -806,7 +807,7 @@ GameObject:
   - component: {fileID: 61002057095816486}
   - component: {fileID: 114167957233861224}
   m_Layer: 0
-  m_Name: trace (6)
+  m_Name: tracee
   m_TagString: invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,8 +825,8 @@ GameObject:
   - component: {fileID: 61756669784936560}
   - component: {fileID: 114589856826445108}
   m_Layer: 0
-  m_Name: trace (24)
-  m_TagString: invisible
+  m_Name: 1/8
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1071,7 +1072,7 @@ GameObject:
   - component: {fileID: 61600536816676716}
   - component: {fileID: 114311682539544532}
   m_Layer: 0
-  m_Name: trace (14)
+  m_Name: ttraceee
   m_TagString: invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1089,8 +1090,8 @@ GameObject:
   - component: {fileID: 61321779430572558}
   - component: {fileID: 114170403209278322}
   m_Layer: 0
-  m_Name: trace (11)
-  m_TagString: invisible
+  m_Name: 1/4
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1161,8 +1162,8 @@ GameObject:
   - component: {fileID: 61675507877280660}
   - component: {fileID: 114356345332345438}
   m_Layer: 0
-  m_Name: trace (21)
-  m_TagString: invisible
+  m_Name: 1/8
+  m_TagString: checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1975,8 +1976,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1812785263585102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69, y: 6.3, z: 0}
-  m_LocalScale: {x: 3.6278996, y: 2.1951141, z: 1}
+  m_LocalPosition: {x: -0.85, y: 6.42, z: 0}
+  m_LocalScale: {x: 3.513807, y: 2.1095443, z: 1}
   m_Children: []
   m_Father: {fileID: 4831640147918104}
   m_RootOrder: 0
@@ -2720,6 +2721,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!50 &50811382243568524
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1294971376448388}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!50 &50874481850227358
 Rigidbody2D:
   serializedVersion: 4
@@ -2919,7 +2940,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3094,7 +3115,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3244,7 +3265,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3344,7 +3365,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3419,7 +3440,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3469,7 +3490,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
