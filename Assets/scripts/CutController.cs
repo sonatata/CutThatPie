@@ -89,7 +89,8 @@ public class CutController : MonoBehaviour {
 
             //destroys pie colliding with knife 
             Destroy(this.gameObject);
-            Instantiate(fullpie, new Vector2(6, -3), Quaternion.identity);
+            Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
+            
 
 
             //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
