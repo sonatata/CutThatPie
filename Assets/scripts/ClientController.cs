@@ -14,6 +14,7 @@ public class ClientController : MonoBehaviour {
     public GameObject wrong;
     public string want;
     public int speed;
+    public int level;
 
     public Text countText;
     private static int count;
@@ -217,7 +218,12 @@ public class ClientController : MonoBehaviour {
     void SetCountText()
     {
         countText.text = "PIES COLLECTED " + count.ToString();
-        if(count == 2)
+        if(count == 2 && level == 1)
+        {
+            //winText.text = "You Win!";
+            SceneManager.LoadScene(2);
+        }
+        if (count == 5 && level == 2)
         {
             //winText.text = "You Win!";
             SceneManager.LoadScene(4);
