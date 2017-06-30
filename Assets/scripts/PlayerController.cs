@@ -41,48 +41,9 @@ public class PlayerController : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("invisible"))
-        {
-            other.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-        }
-        if (other.gameObject.CompareTag("checkpoint"))
-        {
-            if (chkpts == 1)
-            {
-                if (other.name == "1/2")
-                {
-                    Destroy(go);
-                    //Instantiate(half, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-                    Instantiate(half, new Vector2(-6.1f,-2.8f ), Quaternion.identity);
-                    //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-                    //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
-                    //flag = true;
-                }
-                if (other.name == "1/4")
-                {
-                    Destroy(go);
-                    Instantiate(qrtr, new Vector2(-6.1f, -2.8f), Quaternion.identity);
-                    //flag = true;
-                }
-                if (other.name == "1/8")
-                {
-                    Destroy(go);
-                    Instantiate(eth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
-                    //flag = true;
-                }
-                // do something with master //hlf
-                //Master.cut_frac = other.gameObject.name;
-                //Master.is_cut = true;
-
-            }
-            chkpts += 1;
-        }
         
-        else
-        {
-
-        }
-
+        
+        
     }
 
 
