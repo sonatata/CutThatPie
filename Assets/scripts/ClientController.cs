@@ -54,7 +54,9 @@ public class ClientController : MonoBehaviour {
                 SetCountText();
 
             }
-            else if (other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("8th"))
+            else if (other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("8th") 
+                || other.gameObject.CompareTag("3/8") || other.gameObject.CompareTag("5/8")
+                || other.gameObject.CompareTag("whole"))
             {
                 Destroy(other.gameObject);
                 Destroy(fraction.gameObject);
@@ -80,7 +82,9 @@ public class ClientController : MonoBehaviour {
                 SetCountText();
 
             }
-            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("8th"))
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("8th") 
+                || other.gameObject.CompareTag("3/8") || other.gameObject.CompareTag("5/8")
+                || other.gameObject.CompareTag("whole"))
             {
                 Destroy(other.gameObject);
                 Destroy(fraction.gameObject);
@@ -106,7 +110,9 @@ public class ClientController : MonoBehaviour {
                 count = count + 1;
                 SetCountText();
             }
-            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr"))
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") 
+                || other.gameObject.CompareTag("3/8") || other.gameObject.CompareTag("5/8") 
+                || other.gameObject.CompareTag("whole"))
             {
                 Destroy(other.gameObject);
                 Destroy(fraction.gameObject);
@@ -132,7 +138,9 @@ public class ClientController : MonoBehaviour {
                 count = count + 1;
                 SetCountText();
             }
-            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("5/8"))
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") 
+                || other.gameObject.CompareTag("5/8") || other.gameObject.CompareTag("8th")
+                || other.gameObject.CompareTag("whole"))
             {
                 Destroy(other.gameObject);
                 Destroy(fraction.gameObject);
@@ -158,7 +166,38 @@ public class ClientController : MonoBehaviour {
                 count = count + 1;
                 SetCountText();
             }
-            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") || other.gameObject.CompareTag("3/8"))
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") 
+                || other.gameObject.CompareTag("3/8") || other.gameObject.CompareTag("8th")
+                || other.gameObject.CompareTag("whole"))
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
+        }
+        else if (want == "whole")
+        {
+            if (other.gameObject.CompareTag("whole"))
+            //if (Master.cut_frac == "1/2")
+            {
+                Destroy(other.gameObject);
+                Destroy(fraction.gameObject);
+                Destroy(pie.gameObject);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
+                count = count + 1;
+                SetCountText();
+            }
+            else if (other.gameObject.CompareTag("half") || other.gameObject.CompareTag("qrtr") 
+                || other.gameObject.CompareTag("3/8") || other.gameObject.CompareTag("5/8") 
+                || other.gameObject.CompareTag("8th"))
             {
                 Destroy(other.gameObject);
                 Destroy(fraction.gameObject);

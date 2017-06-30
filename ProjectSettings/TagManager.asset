@@ -18,6 +18,7 @@ TagManager:
   - cuttingBoard
   - 3/8
   - 5/8
+  - whole
   layers:
   - Default
   - TransparentFX
