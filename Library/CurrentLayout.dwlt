@@ -67,10 +67,10 @@ MonoBehaviour:
     y: 0
     width: 739
     height: 767
-  m_MinSize: {x: 202, y: 442}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 202, y: 421}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 10
+  controlID: 44
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,10 +185,10 @@ MonoBehaviour:
     y: 30
     width: 1600
     height: 767
-  m_MinSize: {x: 713, y: 471}
-  m_MaxSize: {x: 18008, y: 14021}
+  m_MinSize: {x: 711, y: 471}
+  m_MaxSize: {x: 18006, y: 14021}
   vertical: 0
-  controlID: 64
+  controlID: 43
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 467
     height: 767
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -279,8 +279,8 @@ MonoBehaviour:
     y: 0
     width: 739
     height: 411
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -405,7 +405,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4cecfdff58ecfdff1001feff743dffff7a3dffff7e3dffff883dffff8e3dffff923dffff943dffff963dffff9c3dffffa43dffffa83dffffae3dffffb03dffffc83dffffca3dffffce3dffffd83dffffde3dffffe63dffffea3dffffee3dfffff63dffff823effff8e3effff8c8fffffa492ffff4493ffffce93ffffae95ffff4296ffffb09dffff5e9effff60c4ffff6cc4ffff6ec4ffff4adbffff56dbffff58dbffff86f6ffff92f6ffffe0fbffff00000000365700003e570000465700004e570000725700007a570000825700009a570000a2570000b2570000ba570000c2570000d6570000de570000e6570000ee570000f6570000fe57000014580000245800002c580000345800003c580000445800004c58000054580000
+    m_ExpandedIDs: e0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,19 +498,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources
+    - Assets/graphics
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Assets/graphics
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\sonata\Documents\ctpp\CutThatPie
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 36250000
-    m_LastClickedID: 9526
-    m_ExpandedIDs: 00000000f2240000da250000e62b0000e82b0000ffffff7f
+    m_SelectedIDs: 08260000
+    m_LastClickedID: 9736
+    m_ExpandedIDs: 00000000f424000070260000dc2c0000de2c0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,7 +538,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f2240000da250000e62b0000e82b0000
+    m_ExpandedIDs: 00000000f424000070260000dc2c0000de2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -590,7 +590,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 300}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &19
@@ -649,7 +649,7 @@ MonoBehaviour:
       y: 17
       width: 737
       height: 373
-    m_Scale: {x: 0.62166667, y: 0.62166667}
+    m_Scale: {x: 0.4856771, y: 0.4856771}
     m_Translation: {x: 368.5, y: 186.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -657,12 +657,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -592.7614
-      y: -300
-      width: 1185.5228
-      height: 600
+      x: -758.73456
+      y: -384
+      width: 1517.4691
+      height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.62166667
+  m_defaultScale: 0.4856771
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 737, y: 390}
@@ -730,9 +730,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.3264837
+    m_Target: 13.971906
     speed: 2
-    m_Value: 6.3264837
+    m_Value: 13.971906
   m_Ortho:
     m_Target: 1
     speed: 2

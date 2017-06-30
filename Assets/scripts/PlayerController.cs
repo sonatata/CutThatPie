@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     public CutController script;
 
     private float dist;
-    private bool dragging = false;
+    //private bool dragging = false;
     private Vector3 offset;
     private Transform toDrag;
     Vector3 v3;

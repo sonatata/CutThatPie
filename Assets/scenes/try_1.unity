@@ -678,6 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundPiePrefab: {fileID: 0}
+  fullpie: {fileID: 0}
   instance: {fileID: 0}
   speed: 1
   amount: 1
@@ -896,6 +897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundPiePrefab: {fileID: 0}
+  fullpie: {fileID: 0}
   instance: {fileID: 0}
   speed: 1
   amount: 1
@@ -2463,9 +2465,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1839095087}
   - component: {fileID: 1839095086}
+  - component: {fileID: 1839095088}
   m_Layer: 0
-  m_Name: plate
-  m_TagString: Untagged
+  m_Name: cutting board
+  m_TagString: cuttingBoard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2502,7 +2505,7 @@ SpriteRenderer:
   m_SortingLayerID: -517940355
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aa9313d0beaa2dd4bbac39c9c8581664, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2283811abdbdae44da53a5d5c8a33e2e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2517,12 +2520,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1839095085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.193521, y: -2.87266, z: 0}
-  m_LocalScale: {x: 0.8786846, y: 0.84959495, z: 1}
+  m_LocalPosition: {x: -5.2, y: -2.94, z: 0}
+  m_LocalScale: {x: 0.8800908, y: 0.5970945, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1839095088
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839095085}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2799999
 --- !u!1 &1854267807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,6 +2871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundPiePrefab: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d,
     type: 2}
+  fullpie: {fileID: 0}
   instance: {fileID: 0}
   speed: 1
   amount: 1
@@ -3037,7 +3056,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.10459179, y: -0.35210317}
@@ -3086,6 +3105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundPiePrefab: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d,
     type: 2}
+  fullpie: {fileID: 2018390475}
   instance: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
   speed: 150
   amount: 0

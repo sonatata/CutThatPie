@@ -8,6 +8,7 @@ public class CutController : MonoBehaviour {
     //public GameObject qrtr;
     //public GameObject eth;
     public GameObject roundPiePrefab;
+    public GameObject fullpie;
     public GameObject instance;
     bool flag = false;
     public float speed = 1.0f; //how fast it shakes
@@ -23,7 +24,7 @@ public class CutController : MonoBehaviour {
 
     private void Start()
     {
-        _centre = transform.position;
+        //_centre = transform.position;
     }
     void OnMouseDown()
     {
@@ -32,15 +33,16 @@ public class CutController : MonoBehaviour {
 
     void OnMouseUp()
     {
-        Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
+        //Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
     }
 
     private void Update()
     {
-        _angle += RotateSpeed * Time.deltaTime;
+        //_angle += RotateSpeed * Time.deltaTime;
 
-        var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
-        transform.position = _centre + offset;
+        //var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
+        //transform.position = _centre + offset;
+
         //transform.position.x = 0;
         //transform.position.x = Mathf.Sin(Time.time * speed);
         //transform.position = transform.position + new Vector3(0, Mathf.Sin(Time.time * speed), 0);
@@ -86,7 +88,8 @@ public class CutController : MonoBehaviour {
             //SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
 
             //destroys pie colliding with knife 
-            //Destroy(other.gameObject);
+            Destroy(this.gameObject);
+            Instantiate(fullpie, new Vector2(6, -3), Quaternion.identity);
 
 
             //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
