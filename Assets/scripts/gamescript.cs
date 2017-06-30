@@ -5,6 +5,10 @@ using UnityEngine;
 public class gamescript : MonoBehaviour {
 
 	// Use this for initialization
+	public GameObject half;
+	public GameObject qrtr;
+	public GameObject eth;
+	public GameObject go;
 	Vector3 screenPoint;
 	Vector3 offset;
 	private List<GameObject> objlist = new List<GameObject>();
@@ -48,6 +52,40 @@ public class gamescript : MonoBehaviour {
 			SpriteRenderer rend = collision.gameObject.GetComponent<SpriteRenderer>();
 			rend.enabled = true;
 			objlist.Add(collision.gameObject);
+			if (collision.gameObject.CompareTag("invisible"))
+			{
+				collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+			}
+			if (collision.gameObject.CompareTag("checkpoint"))
+			{
+				
+					if (collision.gameObject.name == "1/2")
+					{
+						Destroy(go);
+						//Instantiate(half, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+						Instantiate(half, new Vector2(-6.1f,-2.8f ), Quaternion.identity);
+						//Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+						//Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+						//flag = true;
+					}
+					if (collision.gameObject.name == "1/4")
+					{
+						Destroy(go);
+						Instantiate(qrtr, new Vector2(-6.1f, -2.8f), Quaternion.identity);
+						//flag = true;
+					}
+					if (collision.gameObject.name == "1/8")
+					{
+						Destroy(go);
+						Instantiate(eth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
+						//flag = true;
+					}
+					// do something with master //hlf
+					//Master.cut_frac = other.gameObject.name;
+					//Master.is_cut = true;
+
+				//chkpts += 1;
+			}
 		
 		}
 
