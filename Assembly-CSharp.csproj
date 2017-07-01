@@ -46,18 +46,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SpriteSlicer2D\Demo\Scripts\FadeAndDestroy.cs" />
-     <Compile Include="Assets\SpriteSlicer2D\Demo\Scripts\SpriteSlicer2DDemoManager.cs" />
-     <Compile Include="Assets\SpriteSlicer2D\Scripts\SpriteSlicer2D.cs" />
+     <Compile Include="Assets\prefabManager.cs" />
      <Compile Include="Assets\scripts\CameraController.cs" />
      <Compile Include="Assets\scripts\ClientController.cs" />
      <Compile Include="Assets\scripts\CutController.cs" />
+     <Compile Include="Assets\scripts\DragRigidbody.cs" />
      <Compile Include="Assets\scripts\Master.cs" />
      <Compile Include="Assets\scripts\MouseManager.cs" />
-     <Compile Include="Assets\scripts\PLayerController.cs" />
+     <Compile Include="Assets\scripts\PauseGame.cs" />
+     <Compile Include="Assets\scripts\PlayerController.cs" />
      <Compile Include="Assets\scripts\Rotate.cs" />
+     <Compile Include="Assets\scripts\exit.cs" />
+     <Compile Include="Assets\scripts\gamescript.cs" />
+     <Compile Include="Assets\scripts\newgame.cs" />
+     <Compile Include="Assets\scripts\pausebutton.cs" />
      <Compile Include="Assets\scripts\slice_display.cs" />
-     <Compile Include="Assets\scripts\slice_script.cs" />
+     <Compile Include="Assets\scripts\timerController.cs" />
+     <Compile Include="Assets\scripts\traceContrlr.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
