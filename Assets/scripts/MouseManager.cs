@@ -25,9 +25,6 @@ public class MouseManager : MonoBehaviour
     public bool draggingMode = false;
 
     public bool tut;
-    public GameObject arrow1;
-    public GameObject arrow2;
-    public GameObject arrow3;
     public bool flag;
 
 
@@ -36,8 +33,6 @@ public class MouseManager : MonoBehaviour
 
     void Start()
     {
-        arrow2.SetActive(false);
-        arrow3.SetActive(false);
         flag = false;
 
     }
@@ -50,68 +45,68 @@ public class MouseManager : MonoBehaviour
     void Update()
     {
         
-        countFrac.text = Master.cut_frac;
-        if (Input.GetMouseButtonDown(0))
-        {
-            // We clicked, but on what?
-            Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
+        //countFrac.text = Master.cut_frac;
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    //// We clicked, but on what?
+        //    //Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //    //Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
 
-            Vector2 dir = Vector2.zero;
+        //    //Vector2 dir = Vector2.zero;
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, dir);
-            if (hit != null && hit.collider != null)
-            {
-                // We clicked on SOMETHING that has a collider
-                if (hit.collider.GetComponent<Rigidbody2D>() != null)
-                {
-                    grabbedObject = hit.collider.GetComponent<Rigidbody2D>();
-                }
-            }
-        }
+        //    //RaycastHit2D hit = Physics2D.Raycast(mousePos2D, dir);
+        //    //if (hit != null && hit.collider != null)
+        //    //{
+        //    //    // We clicked on SOMETHING that has a collider
+        //    //    if (hit.collider.GetComponent<Rigidbody2D>() != null)
+        //    //    {
+        //    //        grabbedObject = hit.collider.GetComponent<Rigidbody2D>();
+        //    //    }
+        //    //}
+        //}
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            grabbedObject = null;
-        }
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    grabbedObject = null;
+        //}
 
-        if (Master.is_cut == true)
-        {
-            //SceneManager.UnloadScene("_Scenes/minigame");
-        }
+        //if (Master.is_cut == true)
+        //{
+        //    //SceneManager.UnloadScene("_Scenes/minigame");
+        //}
 
     }
 
-    IEnumerator RemoveAfterSeconds(int seconds, GameObject obj)
-    {
-        yield return new WaitForSeconds(seconds);
-        obj.SetActive(false);
-    }
+    //IEnumerator RemoveAfterSeconds(int seconds, GameObject obj)
+    //{
+    //    yield return new WaitForSeconds(seconds);
+    //    obj.SetActive(false);
+    //}
 
     void FixedUpdate()
     {
-        if (grabbedObject != null)
-        {
-            // Move the object with the mouse
-            Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
-            grabbedObject.position = mousePos2D;
+        //if (grabbedObject != null)
+        //{
+        //    // Move the object with the mouse
+        //    Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //    Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
+        //    grabbedObject.position = mousePos2D;
 
-            if (arrow1 != null && grabbedObject.CompareTag("whole"))
-            {
-                Destroy(arrow1);
-                arrow2.SetActive(true);
-                StartCoroutine(RemoveAfterSeconds(3, arrow2));
+        //    if (arrow1 != null && grabbedObject.CompareTag("whole"))
+        //    {
+        //        Destroy(arrow1);
+        //        arrow2.SetActive(true);
+        //        StartCoroutine(RemoveAfterSeconds(3, arrow2));
 
                 
-                flag = true;
-            }
+        //        flag = true;
+        //    }
 
-            if (flag)
-            {
+        //    if (flag)
+        //    {
 
-            }
-        }
+        //    }
+        //}
     }
 
 }

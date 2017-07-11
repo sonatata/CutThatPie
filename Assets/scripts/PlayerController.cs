@@ -52,41 +52,41 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //countFrac.text = Master.cut_frac;
-        if (Input.GetMouseButtonDown(0))
-        {
-            // We clicked, but on what?
-            Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    // We clicked, but on what?
+        //    Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //    Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
 
-            Vector2 dir = Vector2.zero;
+        //    Vector2 dir = Vector2.zero;
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, dir);
-            if (hit != null && hit.collider != null)
-            {
-                // We clicked on SOMETHING that has a collider
-                if (hit.collider.GetComponent<Rigidbody2D>() != null)
-                {
-                    grabObject = hit.collider.GetComponent<Rigidbody2D>();
-                }
-            }
-        }
+        //    RaycastHit2D hit = Physics2D.Raycast(mousePos2D, dir);
+        //    if (hit != null && hit.collider != null)
+        //    {
+        //        // We clicked on SOMETHING that has a collider
+        //        if (hit.collider.GetComponent<Rigidbody2D>() != null)
+        //        {
+        //            grabObject = hit.collider.GetComponent<Rigidbody2D>();
+        //        }
+        //    }
+        //}
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            grabObject = null;
-        }
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    grabObject = null;
+        //}
 
     }
 
     void FixedUpdate()
     {
-        if (grabObject != null)
-        {
-            // Move the object with the mouse
-            Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
-            grabObject.position = mousePos2D;
-        }
+        //if (grabObject != null)
+        //{
+        //    // Move the object with the mouse
+        //    Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //    Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
+        //    grabObject.position = mousePos2D;
+        //}
     }
 
 }

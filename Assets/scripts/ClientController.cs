@@ -25,8 +25,7 @@ public class ClientController : MonoBehaviour {
 	public Text rightwrong;
     private static int count;
     private bool ded;
-
-    public GameObject arrow3;
+    
 
     public GameObject EndPanel;
 
@@ -36,7 +35,6 @@ public class ClientController : MonoBehaviour {
     void Start () {
         count = 0;
         EndPanel.SetActive(false);
-        arrow3.SetActive(false);
 
         ded = false;
 		served = false;
