@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/youwin.unity
     guid: febd5036059476345a75a1dcb8c5897f
+  - enabled: 1
+    path: Assets/DragRigidBody2D/Examples/Scenes/DragDemo.unity
+    guid: a6bff5c7c733ff940bd74462beff3d5e

@@ -24,9 +24,28 @@ public class MouseManager : MonoBehaviour
 
     public bool draggingMode = false;
 
+    public bool tut;
+    public GameObject arrow1;
+    public GameObject arrow2;
+    public GameObject arrow3;
+    public bool flag;
+
 
     Rigidbody2D grabbedObject = null;
     public Text countFrac;
+
+    void Start()
+    {
+        arrow2.SetActive(false);
+        arrow3.SetActive(false);
+        flag = false;
+
+    }
+
+    public void changebool()
+    {
+        flag = true;
+    }
 
     void Update()
     {
@@ -63,6 +82,12 @@ public class MouseManager : MonoBehaviour
 
     }
 
+    IEnumerator RemoveAfterSeconds(int seconds, GameObject obj)
+    {
+        yield return new WaitForSeconds(seconds);
+        obj.SetActive(false);
+    }
+
     void FixedUpdate()
     {
         if (grabbedObject != null)
@@ -71,6 +96,21 @@ public class MouseManager : MonoBehaviour
             Vector3 mouseWorldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mouseWorldPos3D.x, mouseWorldPos3D.y);
             grabbedObject.position = mousePos2D;
+
+            if (arrow1 != null && grabbedObject.CompareTag("whole"))
+            {
+                Destroy(arrow1);
+                arrow2.SetActive(true);
+                StartCoroutine(RemoveAfterSeconds(3, arrow2));
+
+                
+                flag = true;
+            }
+
+            if (flag)
+            {
+
+            }
         }
     }
 

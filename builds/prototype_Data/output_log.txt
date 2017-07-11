@@ -15,20 +15,9 @@ Platform assembly: C:\Users\sonata\Documents\ctpp\CutThatPie\builds\prototype_Da
 Loading C:\Users\sonata\Documents\ctpp\CutThatPie\builds\prototype_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\sonata\Documents\ctpp\CutThatPie\builds\prototype_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\sonata\Documents\ctpp\CutThatPie\builds\prototype_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.081 seconds
+- Completed reload, in  0.085 seconds
 Platform assembly: C:\Users\sonata\Documents\ctpp\CutThatPie\builds\prototype_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\sonata\Documents\ctpp\CutThatPie\builds\prototype_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 50Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 5.083770 ms
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.879407 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 353.
-Total: 0.505717 ms (FindLiveObjects: 0.054583 ms CreateObjectMapping: 0.053650 ms MarkObjects: 0.360627 ms  DeleteObjects: 0.035922 ms)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 25e8 -> priority: 1 
-  Thread -> id: 4c64 -> priority: 1 

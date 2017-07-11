@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/try_1.unity
+- path: Assets/DragRigidBody2D/Examples/Scenes/DragDemo.unity
   isLoaded: 1
   isActive: 1

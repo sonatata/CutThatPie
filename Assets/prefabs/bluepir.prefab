@@ -105,6 +105,7 @@ MonoBehaviour:
   instance: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
   speed: 150
   amount: 0
+  arrow4: {fileID: 0}
 --- !u!212 &212298057631613824
 SpriteRenderer:
   m_ObjectHideFlags: 1

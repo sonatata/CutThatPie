@@ -12,4 +12,9 @@ public class newgame : MonoBehaviour
     {
         Application.LoadLevel(1);
     }
+
+    public void newlevel()
+    {
+        Application.LoadLevel(2);
+    }
 }

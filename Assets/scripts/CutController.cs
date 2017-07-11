@@ -21,9 +21,11 @@ public class CutController : MonoBehaviour {
 
     private Vector2 _centre;
     private float _angle;
+    public GameObject arrow4;
 
     private void Start()
     {
+        arrow4.SetActive(false);
         //_centre = transform.position;
     }
     void OnMouseDown()
@@ -89,8 +91,9 @@ public class CutController : MonoBehaviour {
 
             //destroys pie colliding with knife 
             Destroy(this.gameObject);
+            //arrow4.SetActive(true);
             //Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
-            
+
 
 
             //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);

@@ -24,7 +24,9 @@ public class gamescript : MonoBehaviour {
 	void Update () {
 		
 	}
-	void OnMouseDown()
+
+
+    void OnMouseDown()
 	{
 		screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 

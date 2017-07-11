@@ -26,12 +26,18 @@ public class ClientController : MonoBehaviour {
     private static int count;
     private bool ded;
 
+    public GameObject arrow3;
+
+    public GameObject EndPanel;
+
     public Text winText;
     public Text loseText;
     // Use this for initialization
     void Start () {
         count = 0;
-        
+        EndPanel.SetActive(false);
+        arrow3.SetActive(false);
+
         ded = false;
 		served = false;
 		wronged = false;
@@ -71,6 +77,8 @@ public class ClientController : MonoBehaviour {
 				count = count + 1;
 				SetCountText ();
 				Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
+            
+            //arrow3.SetActive(true);
 
 			}
 		else if (!served && !wronged)
@@ -85,7 +93,8 @@ public class ClientController : MonoBehaviour {
 			//Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
 			//Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
 			Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
-		}
+            //arrow3.SetActive(true);
+        }
        
 
 
@@ -97,7 +106,9 @@ public class ClientController : MonoBehaviour {
         if(count == 2 && level == 1)
         {
             //winText.text = "You Win!";
-            SceneManager.LoadScene(2);
+            //SceneManager.LoadScene(2);
+            Time.timeScale = 0;
+            EndPanel.SetActive(true);
         }
         if (count == 5 && level == 2)
         {
