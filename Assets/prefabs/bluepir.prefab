@@ -26,7 +26,7 @@ GameObject:
   m_Layer: 0
   m_Name: bluepir
   m_TagString: whole
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: 7daa1b9e88b470a48b8623800b15ee65, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
+    oldSize: {x: 2.06, y: 2.06}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -103,9 +103,9 @@ MonoBehaviour:
     type: 2}
   fullpie: {fileID: 1563541781169120}
   instance: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
+  glass: {fileID: 0}
   speed: 150
   amount: 0
-  arrow4: {fileID: 0}
 --- !u!212 &212298057631613824
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,10 +135,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -517940355
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7daa1b9e88b470a48b8623800b15ee65, type: 3}
+  m_SortingLayerID: 1453314609
+  m_SortingLayer: 1
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 21300000, guid: ded93a5b2f866444e93e0944688c7093, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

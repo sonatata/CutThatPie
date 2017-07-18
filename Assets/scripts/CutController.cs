@@ -10,6 +10,7 @@ public class CutController : MonoBehaviour {
     public GameObject roundPiePrefab;
     public GameObject fullpie;
     public GameObject instance;
+    public GameObject glass;
     bool flag = false;
     public float speed = 1.0f; //how fast it shakes
     public float amount = 1.0f; //how much it shakes
@@ -21,11 +22,11 @@ public class CutController : MonoBehaviour {
 
     private Vector2 _centre;
     private float _angle;
-    public GameObject arrow4;
+    
 
     private void Start()
     {
-        arrow4.SetActive(false);
+        
         //_centre = transform.position;
     }
     void OnMouseDown()
@@ -82,7 +83,9 @@ public class CutController : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("cuttingBoard"))
         {
-
+            //glass.SetActive(true);
+            //SpriteRenderer rend = glass.gameObject.GetComponent<SpriteRenderer>();
+            //rend.enabled = true;
             //creates a pie module to cut on 
             Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
 

@@ -52,8 +52,8 @@ public class ClientController : MonoBehaviour {
             transform.position.y), aPosition1, Time.deltaTime*speed);
 
 		displayTime -= Time.deltaTime;
-		Debug.Log (displayTime);
-		Debug.Log (displaymessage);
+		//Debug.Log (displayTime);
+		//Debug.Log (displaymessage);
 		if (displayTime <= 0.0f) {
 			displaymessage = false;
 		}

@@ -11,14 +11,20 @@ public class gamescript : MonoBehaviour {
     public GameObject threeeth;
     public GameObject fiveeth;
     public GameObject go;
+    public GameObject exit;
+
+    public GameObject glass;
+
 	Vector3 screenPoint;
 	Vector3 offset;
 	private List<GameObject> objlist = new List<GameObject>();
     public GameObject knife;
 	private GameObject lasthit;
 	void Start () {
-		
-	}
+        SpriteRenderer rend = glass.gameObject.GetComponent<SpriteRenderer>();
+        rend.enabled = true;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,7 +37,11 @@ public class gamescript : MonoBehaviour {
 	//	screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
 	//	offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-
+    public void selfDistruct()
+    {
+        Destroy(go);
+        Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
+    }
 	//}
 
 	//void OnMouseDrag()
@@ -51,20 +61,24 @@ public class gamescript : MonoBehaviour {
 		//Debug.Log ("here");
 		//Debug.Log(collision.gameObject.transform.parent.gameObject.name);
 
-		else if (objlist.Contains(collision.gameObject.transform.parent.gameObject)){
+		//else if (objlist.Contains(collision.gameObject.transform.parent.gameObject)){
 			
-			SpriteRenderer rend = collision.gameObject.GetComponent<SpriteRenderer>();
-			rend.enabled = true;
-			objlist.Add(collision.gameObject);
-			if (collision.gameObject.CompareTag("invisible"))
-			{
-				collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-			}
+		//	SpriteRenderer rend = collision.gameObject.GetComponent<SpriteRenderer>();
+		//	rend.enabled = true;
+		//	objlist.Add(collision.gameObject);
+		//	if (collision.gameObject.CompareTag("invisible"))
+		//	{
+		//		collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+		//	}
 			if (collision.gameObject.CompareTag("checkpoint"))
 			{
-				
-					if (collision.gameObject.name == "1/2")
+
+            SpriteRenderer rend = glass.gameObject.GetComponent<SpriteRenderer>();
+            rend.enabled = false;
+
+            if (collision.gameObject.name == "1/2")
 					{
+                    Debug.Log(" 1/2 collision detected");
 						Destroy(go);
 						//Instantiate(half, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
 						Instantiate(half, new Vector2(-6.1f,-2.8f ), Quaternion.identity);
@@ -103,7 +117,7 @@ public class gamescript : MonoBehaviour {
                 //chkpts += 1;
             }
 		
-		}
+	//	}
 
 	}
 }
