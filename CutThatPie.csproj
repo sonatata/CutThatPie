@@ -102,6 +102,8 @@
     <Compile Include="Assets\scripts\slice_display.cs" />
     <Compile Include="Assets\scripts\timerController.cs" />
     <Compile Include="Assets\scripts\traceContrlr.cs" />
+    <Compile Include="Assets\scripts\tutorialcontroller.cs" />
+    <Compile Include="Assets\tutTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DragRigidBody2D\readme_v0.6.txt" />
