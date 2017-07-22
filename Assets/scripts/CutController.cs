@@ -24,59 +24,7 @@ public class CutController : MonoBehaviour {
     private float _angle;
     
 
-    private void Start()
-    {
-        
-        //_centre = transform.position;
-    }
-    void OnMouseDown()
-    {
-        //transform.localScale *= 1.1F;
-    }
-
-    void OnMouseUp()
-    {
-        //Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
-    }
-
-    private void Update()
-    {
-        //_angle += RotateSpeed * Time.deltaTime;
-
-        //var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
-        //transform.position = _centre + offset;
-
-        //transform.position.x = 0;
-        //transform.position.x = Mathf.Sin(Time.time * speed);
-        //transform.position = transform.position + new Vector3(0, Mathf.Sin(Time.time * speed), 0);
-    }
-    // Update is called once per frame
-    void FixedUpdate () {
-
-        if (!flag)
-        {
-            //if (Master.cut_frac == "1/2")
-            //{
-
-            //    Instantiate(half, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
-            //    //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-            //    //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
-            //    flag = true;
-            //}
-            //if(Master.cut_frac == "1/4")
-            //{
-            //    Instantiate(qrtr, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
-            //    flag = true;
-            //}
-            //if (Master.cut_frac == "1/8")
-            //{
-            //    Instantiate(eth, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, this.transform);
-            //    flag = true;
-            //}
-
-        }
-
-    }
+    
 
 
     private void OnTriggerEnter2D(Collider2D other)

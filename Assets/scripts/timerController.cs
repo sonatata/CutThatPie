@@ -38,7 +38,7 @@ public class timerController : MonoBehaviour {
         if (minutes < 0)
         {
             stop = true;
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
             Debug.Log("stopped");
             minutes = 0;
             seconds = 0;

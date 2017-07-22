@@ -28,8 +28,9 @@ public class gamescript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        //Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
+
+    }
 
 
  //   void OnMouseDown()

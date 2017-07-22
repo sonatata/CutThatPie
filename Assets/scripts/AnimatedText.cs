@@ -5,11 +5,12 @@ using UnityEngine;
 public class AnimatedText : MonoBehaviour
 {
     private string str;
+    public GameObject textbox;
     public Rect textplace;
     void Start()
     {
-        
-        StartCoroutine(AnimateText("Pretty cool text"));
+        textbox.SetActive(false);
+        StartCoroutine(AnimateText("Hello there! and welcome to your very own pie shop!"));
     }
 
 
@@ -24,9 +25,15 @@ public class AnimatedText : MonoBehaviour
         }
     }
 
-    void OnGUI()
+    private void Update()
     {
-        GUI.Label(textplace, str);
-        //GUI.Box(new Rect(505, 4, 200, 100), str);
+        textbox.SetActive(true);
     }
+    //void OnGUI()
+    //{
+    //    //GUI.Label(textplace, str);
+    //    GUI.color = new Color(1.0f, 1.0f, 1.0f, 0.5f); //0.5 is half opacity 
+        
+    //    GUI.Box(new Rect(505, 4, 200, 100), str);
+    //}
 }
