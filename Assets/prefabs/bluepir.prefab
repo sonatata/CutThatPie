@@ -26,7 +26,7 @@ GameObject:
   m_Layer: 0
   m_Name: bluepir
   m_TagString: whole
-  m_Icon: {fileID: 2800000, guid: 7daa1b9e88b470a48b8623800b15ee65, type: 3}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1563541781169120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.58, y: -0.28, z: 0}
-  m_LocalScale: {x: 1.2743299, y: 1.0725262, z: 1}
+  m_LocalPosition: {x: 2.58, y: -2.7, z: 0}
+  m_LocalScale: {x: 1.6823391, y: 1.2976036, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +75,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10459179, y: -0.35210317}
+  m_Offset: {x: -0.108695984, y: 0.059342444}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -86,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8627208, y: 1.6072506}
+  m_Size: {x: 1.4361453, y: 1.0769439}
   m_EdgeRadius: 0
 --- !u!114 &114360111789856880
 MonoBehaviour:
@@ -135,8 +135,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -517940355
-  m_SortingLayer: 2
+  m_SortingLayerID: 1453314609
+  m_SortingLayer: 1
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ded93a5b2f866444e93e0944688c7093, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

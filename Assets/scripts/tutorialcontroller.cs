@@ -163,7 +163,6 @@ public class tutorialcontroller : MonoBehaviour {
 			Debug.Log ("here");
 			//count = count + 1;
 			//SetCountText ();
-			Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
 
 
 			//arrow3.SetActive(true);
@@ -174,7 +173,6 @@ public class tutorialcontroller : MonoBehaviour {
 			Destroy(other.gameObject);
 			Destroy(fraction.gameObject);
 			Destroy(pie.gameObject);
-			Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
 		}
 
 	}

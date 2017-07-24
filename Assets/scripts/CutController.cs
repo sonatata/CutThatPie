@@ -11,6 +11,7 @@ public class CutController : MonoBehaviour {
     public GameObject fullpie;
     public GameObject instance;
     public GameObject glass;
+    public GameObject placeholder;
     bool flag = false;
     public float speed = 1.0f; //how fast it shakes
     public float amount = 1.0f; //how much it shakes
@@ -31,23 +32,18 @@ public class CutController : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("cuttingBoard"))
         {
-            //glass.SetActive(true);
-            //SpriteRenderer rend = glass.gameObject.GetComponent<SpriteRenderer>();
-            //rend.enabled = true;
-            //creates a pie module to cut on 
             Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
-
-            //Application.LoadLevel("_Scenes/minigame");
-            //SceneManager.LoadScene ("cut", LoadSceneMode.Additive);
 
             //destroys pie colliding with knife 
             Destroy(this.gameObject);
-            //arrow4.SetActive(true);
-            //Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
+        }
 
+        if (other.gameObject.CompareTag("wall"))
+        {
 
+            Instantiate(prefabManager.Instance.PiePrefab, new Vector2(2.58f, -2.7f), Quaternion.identity);
 
-            //Instantiate(result, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity, plate.transform);
+            
         }
 
 

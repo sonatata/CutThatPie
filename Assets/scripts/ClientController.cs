@@ -74,7 +74,6 @@ public class ClientController : MonoBehaviour {
 				served = true;
 				count = count + 1;
 				SetCountText ();
-				Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
             
             //arrow3.SetActive(true);
 
@@ -88,9 +87,6 @@ public class ClientController : MonoBehaviour {
 			wronged = true;
 			displaymessage = true;
 			displayTime = 3.0f;
-			//Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-			//Instantiate(wrong, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
-			Instantiate(prefabManager.Instance.PiePrefab, new Vector2(6, -3), Quaternion.identity);
             //arrow3.SetActive(true);
         }
        

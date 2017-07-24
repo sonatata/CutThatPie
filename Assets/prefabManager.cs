@@ -5,6 +5,7 @@ using UnityEngine;
 public class prefabManager : MonoBehaviour {
     // Assign the prefab in the inspector
     public GameObject PiePrefab;
+    public GameObject bluepie;
     //Singleton
     private static prefabManager m_Instance = null;
     public static prefabManager Instance

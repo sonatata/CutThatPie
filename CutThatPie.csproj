@@ -103,6 +103,8 @@
     <Compile Include="Assets\scripts\timerController.cs" />
     <Compile Include="Assets\scripts\traceContrlr.cs" />
     <Compile Include="Assets\scripts\tutorialcontroller.cs" />
+    <Compile Include="Assets\trahs.cs" />
+    <Compile Include="Assets\trash.cs" />
     <Compile Include="Assets\tut.cs" />
     <Compile Include="Assets\tutTrigger.cs" />
   </ItemGroup>
