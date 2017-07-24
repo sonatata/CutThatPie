@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/tutog.unity
+- path: Assets/scenes/try_1.unity
   isLoaded: 1
   isActive: 1
