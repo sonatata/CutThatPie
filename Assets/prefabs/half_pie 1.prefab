@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4760743001867024}
   - component: {fileID: 212209900673037862}
   - component: {fileID: 50838247411845654}
-  - component: {fileID: 58800267890888672}
+  - component: {fileID: 61254809786413028}
   m_Layer: 0
   m_Name: half_pie 1
   m_TagString: 3/8
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1005691835007794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.37, y: 2.34, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58800267890888672
-CircleCollider2D:
+--- !u!61 &61254809786413028
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -74,9 +74,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.86475945}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.32, y: 8.85}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.28
+  m_Size: {x: 4.32, y: 7.1204815}
+  m_EdgeRadius: 0
 --- !u!212 &212209900673037862
 SpriteRenderer:
   m_ObjectHideFlags: 1

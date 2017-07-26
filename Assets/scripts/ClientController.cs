@@ -78,7 +78,7 @@ public class ClientController : MonoBehaviour {
 				//Instantiate (thanks, new Vector2 (fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
 				//rightwrong.text = "Thanks!";
 				displaymessage = true;
-				displayTime = 3.0f;
+				displayTime = 3.5f;
 				served = true;
 				count = count + 1;
 				SetCountText ();
@@ -97,7 +97,7 @@ public class ClientController : MonoBehaviour {
 			//rightwrong.text = "Wrong";
 			wronged = true;
 			displaymessage = true;
-			displayTime = 3.0f;
+			displayTime = 3.5f;
             no.Play();
             //arrow3.SetActive(true);
         }
