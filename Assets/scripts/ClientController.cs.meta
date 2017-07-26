@@ -1,10 +1,22 @@
 fileFormatVersion: 2
 guid: 43678739904e8c54fb2cf58811fb74ad
-timeCreated: 1496749854
+timeCreated: 1501025483
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - plate: {instanceID: 0}
+  - fraction: {instanceID: 0}
+  - pie: {instanceID: 0}
+  - thanks: {instanceID: 0}
+  - wrong: {instanceID: 0}
+  - yes: {fileID: 82103323389514130, guid: 6b629931e85be8143806584f163419d8, type: 2}
+  - no: {fileID: 82946189588613628, guid: a88fa0b2b95f4784cb5408a9f27e4728, type: 2}
+  - countText: {instanceID: 0}
+  - rightwrong: {instanceID: 0}
+  - EndPanel: {instanceID: 0}
+  - winText: {instanceID: 0}
+  - loseText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

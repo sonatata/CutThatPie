@@ -20,6 +20,9 @@ public class ClientController : MonoBehaviour {
 	private bool displaymessage;
 	private float displayTime;
 
+    // audio
+    public AudioSource yes;
+    public AudioSource no;
 
     public Text countText;
 	public Text rightwrong;
@@ -45,9 +48,14 @@ public class ClientController : MonoBehaviour {
         //loseText.text = "";
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        //GetComponent<AudioSource>().clip = yes;
+    }
+
+    // Update is called once per frame
+    void Update () {
         transform.position = Vector2.MoveTowards(new Vector2(transform.position.x,
             transform.position.y), aPosition1, Time.deltaTime*speed);
 
@@ -74,10 +82,13 @@ public class ClientController : MonoBehaviour {
 				served = true;
 				count = count + 1;
 				SetCountText ();
+            yes.Play();
+            
+            
             
             //arrow3.SetActive(true);
 
-			}
+        }
 		else if (!served && !wronged)
 		{
 			Destroy(other.gameObject);
@@ -87,6 +98,7 @@ public class ClientController : MonoBehaviour {
 			wronged = true;
 			displaymessage = true;
 			displayTime = 3.0f;
+            no.Play();
             //arrow3.SetActive(true);
         }
        
