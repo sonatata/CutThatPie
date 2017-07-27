@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4760743001867024}
   - component: {fileID: 212209900673037862}
   - component: {fileID: 50838247411845654}
-  - component: {fileID: 58800267890888672}
+  - component: {fileID: 61478378380156664}
   m_Layer: 0
   m_Name: half_pie
   m_TagString: half
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58800267890888672
-CircleCollider2D:
+--- !u!61 &61478378380156664
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,8 +75,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.29, y: 8.82}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.28
+  m_Size: {x: 4.29, y: 8.82}
+  m_EdgeRadius: 0
 --- !u!212 &212209900673037862
 SpriteRenderer:
   m_ObjectHideFlags: 1
