@@ -1,10 +1,21 @@
 fileFormatVersion: 2
 guid: b08cda8a67d806e4fba79c9b7da71dbb
-timeCreated: 1498021004
+timeCreated: 1501698936
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - half: {instanceID: 0}
+  - qrtr: {instanceID: 0}
+  - eth: {instanceID: 0}
+  - threeeth: {instanceID: 0}
+  - sth: {fileID: 1005691835007794, guid: 54e8fc97e7656524da2d610ccd0ebbbf, type: 2}
+  - thrqrtr: {fileID: 1891445087345418, guid: 2ce3dce40a872df4aac8b9dc9b2e9dcb, type: 2}
+  - fiveeth: {instanceID: 0}
+  - go: {instanceID: 0}
+  - exit: {instanceID: 0}
+  - glass: {instanceID: 0}
+  - knife: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

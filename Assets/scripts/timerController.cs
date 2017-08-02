@@ -13,6 +13,9 @@ public class timerController : MonoBehaviour {
     private float minutes;
     private float seconds;
 
+
+
+
     public Text text;
 
     public void startTimer(float from)
@@ -39,7 +42,7 @@ public class timerController : MonoBehaviour {
         if (minutes < 0)
         {
             stop = true;
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(6);
             Debug.Log("stopped");
             minutes = 0;
             seconds = 0;

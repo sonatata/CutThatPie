@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 425287504}
   m_Layer: 0
   m_Name: guy client
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: -7, y: 0}
   plate: {fileID: 0}
   fraction: {fileID: 1974276167}
   pie: {fileID: 196599918}
@@ -1782,7 +1782,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 609338973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.083689, y: -0.52156174, z: 0}
+  m_LocalPosition: {x: 10.083689, y: 0.6, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 425287503}
@@ -1926,7 +1926,7 @@ GameObject:
   - component: {fileID: 654031799}
   m_Layer: 0
   m_Name: guy client (1)
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1947,7 +1947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.4, y: -0.6684383}
+  m_AnchoredPosition: {x: 26.36, y: -0.6684383}
   m_SizeDelta: {x: 5.12, y: 5.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &654031799
@@ -2130,7 +2130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: 0, y: 0}
   plate: {fileID: 0}
   fraction: {fileID: 1536164598}
   pie: {fileID: 2009837927}
@@ -3020,7 +3020,7 @@ GameObject:
   - component: {fileID: 1245691722}
   m_Layer: 0
   m_Name: guy client (2)
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3214,7 +3214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: -4, y: 0}
   plate: {fileID: 0}
   fraction: {fileID: 1626799653}
   pie: {fileID: 848068621}
@@ -5036,7 +5036,7 @@ GameObject:
   - component: {fileID: 1777507463}
   m_Layer: 0
   m_Name: girl client (1)
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5049,7 +5049,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777507461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.916311, y: -1.11, z: 0}
+  m_LocalPosition: {x: 13.44, y: -1.11, z: 0}
   m_LocalScale: {x: 1.74562, y: 1.76646, z: 1}
   m_Children:
   - {fileID: 1042434739}
@@ -5230,7 +5230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: -4, y: 0}
   plate: {fileID: 0}
   fraction: {fileID: 1042434738}
   pie: {fileID: 1752707928}
@@ -6031,7 +6031,7 @@ GameObject:
   - component: {fileID: 2006147447}
   m_Layer: 0
   m_Name: girl client
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6044,7 +6044,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006147445}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.8, y: -1.06, z: 0}
+  m_LocalPosition: {x: 38.05, y: -1.06, z: 0}
   m_LocalScale: {x: 1.7456213, y: 1.766459, z: 1}
   m_Children:
   - {fileID: 214844747}
@@ -6225,7 +6225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: 2, y: 0}
   plate: {fileID: 0}
   fraction: {fileID: 214844746}
   pie: {fileID: 1460824812}

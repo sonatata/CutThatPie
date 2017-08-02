@@ -538,7 +538,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 393529670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.083689, y: -0.52156174, z: 0}
+  m_LocalPosition: {x: 10.083689, y: 0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1253366918}
@@ -2147,7 +2147,7 @@ GameObject:
   - component: {fileID: 1253366919}
   m_Layer: 0
   m_Name: guy client
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2163,7 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: -7, y: 0}
   plate: {fileID: 1839095085}
   fraction: {fileID: 1885017315}
   pie: {fileID: 1910803168}
@@ -3002,7 +3002,7 @@ GameObject:
   - component: {fileID: 1537047716}
   m_Layer: 0
   m_Name: girl client
-  m_TagString: Untagged
+  m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3018,7 +3018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43678739904e8c54fb2cf58811fb74ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aPosition1: {x: -20, y: 0}
+  aPosition1: {x: -4, y: 0}
   plate: {fileID: 1839095085}
   fraction: {fileID: 688540845}
   pie: {fileID: 1305134167}
@@ -3082,7 +3082,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537047711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.916311, y: 0.021561742, z: 0}
+  m_LocalPosition: {x: 9.96, y: -0.6, z: 0}
   m_LocalScale: {x: 1.7456213, y: 1.766459, z: 1}
   m_Children:
   - {fileID: 688540846}

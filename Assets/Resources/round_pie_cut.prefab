@@ -3269,6 +3269,8 @@ MonoBehaviour:
   qrtr: {fileID: 1891445087345418, guid: 5a609c7a9ea71c5439126d2923a089da, type: 2}
   eth: {fileID: 1891445087345418, guid: 9a186b24cced05a4789765ad15c04065, type: 2}
   threeeth: {fileID: 1005691835007794, guid: 9dc04c6b1846d65428f9b138bff62eb1, type: 2}
+  sth: {fileID: 1005691835007794, guid: 54e8fc97e7656524da2d610ccd0ebbbf, type: 2}
+  thrqrtr: {fileID: 1891445087345418, guid: 2ce3dce40a872df4aac8b9dc9b2e9dcb, type: 2}
   fiveeth: {fileID: 1005691835007794, guid: e47c1b6d20c76af4f8f7535cc9277e67, type: 2}
   go: {fileID: 1804868259389858}
   exit: {fileID: 0}
@@ -5310,8 +5312,8 @@ RectTransform:
   m_Father: {fileID: 224329889125060588}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: 183}
-  m_SizeDelta: {x: 73, y: 73}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -396.7, y: -144.9}
+  m_SizeDelta: {x: 152.8, y: 158.6}
+  m_Pivot: {x: 1, y: 1}

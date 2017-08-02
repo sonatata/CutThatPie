@@ -18,11 +18,14 @@ EditorBuildSettings:
     path: Assets/scenes/try_3.unity
     guid: fa6b1c86900854043b5104afda850046
   - enabled: 1
-    path: Assets/scenes/gameover.unity
-    guid: 5f8ef8da76970f14a89bbd34396dc59d
+    path: Assets/scenes/try_4.unity
+    guid: 937c93101d29408428ba5059c2ba5e9c
   - enabled: 1
     path: Assets/scenes/youwin.unity
     guid: febd5036059476345a75a1dcb8c5897f
+  - enabled: 1
+    path: Assets/scenes/gameover.unity
+    guid: 5f8ef8da76970f14a89bbd34396dc59d
   - enabled: 0
     path: Assets/scenes/try_2.unity
     guid: 4551491b1ce589845b700ad417a7e94b

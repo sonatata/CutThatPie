@@ -9,6 +9,8 @@ public class gamescript : MonoBehaviour {
 	public GameObject qrtr;
 	public GameObject eth;
     public GameObject threeeth;
+    public GameObject sth;
+    public GameObject thrqrtr;
     public GameObject fiveeth;
     public GameObject go;
     public GameObject exit;
@@ -82,41 +84,50 @@ public class gamescript : MonoBehaviour {
                     Debug.Log(" 1/2 collision detected");
 						Destroy(go);
 						//Instantiate(half, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-						Instantiate(half, new Vector2(-6.1f,-2.8f ), Quaternion.identity);
-						//Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
-						//Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
-						//flag = true;
-					}
+						Instantiate(half, new Vector2(-7f,-2.8f ), Quaternion.identity);
+                Instantiate(half, new Vector2(-5f, -2.8f), Quaternion.identity);
+                //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
+                //flag = true;
+            }
 					if (collision.gameObject.name == "1/4")
 					{
 						Destroy(go);
-						Instantiate(qrtr, new Vector2(-6.1f, -2.8f), Quaternion.identity);
-						//flag = true;
-					}
+						Instantiate(qrtr, new Vector2(-7.1f, -2.5f), Quaternion.identity);
+                        Instantiate(thrqrtr, new Vector2(-5.1f, -2.5f), Quaternion.identity);
+                //flag = true;
+            }
 					if (collision.gameObject.name == "1/8")
 					{
 						Destroy(go);
-						Instantiate(eth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
-						//flag = true;
-					}
+						Instantiate(eth, new Vector2(-5.1f, -2.5f), Quaternion.identity);
+                Instantiate(sth, new Vector2(-7f, -2.5f), Quaternion.identity);
+                //flag = true;
+            }
                 if (collision.gameObject.name == "3/8")
                 {
                     Destroy(go);
-                    Instantiate(threeeth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
-                    //flag = true;
-                }
+                    Instantiate(threeeth, new Vector2(-7f, -2.5f), Quaternion.identity);
+                Instantiate(fiveeth, new Vector2(-5.1f, -2.5f), Quaternion.identity);
+                //flag = true;
+            }
                 if (collision.gameObject.name == "5/8")
                 {
                     Destroy(go);
-                    Instantiate(fiveeth, new Vector2(-6.1f, -2.8f), Quaternion.identity);
-                    //flag = true;
-                }
+                    Instantiate(fiveeth, new Vector2(-7.1f, -2.5f), Quaternion.identity);
+                Instantiate(threeeth, new Vector2(-5.1f, -2.5f), Quaternion.identity);
+                //flag = true;
+            }
                 // do something with master //hlf
                 //Master.cut_frac = other.gameObject.name;
                 //Master.is_cut = true;
 
                 //chkpts += 1;
             }
+            else if (collision.gameObject.CompareTag("client"))
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), this.gameObject.GetComponent<Collider2D>());
+        }
 		
 	//	}
 
