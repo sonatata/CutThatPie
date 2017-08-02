@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9bb9cffc8a34478902368173d84633, type: 3}
+  m_Name: settings
+  m_EditorClassIdentifier: 
+  targetTime: 41389.678951634305
+  textColor: {r: 0, g: 1, b: 0, a: 1}
+  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  status: 1
+  kind: 2
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6

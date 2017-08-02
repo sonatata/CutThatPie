@@ -25,6 +25,7 @@ public class ClientController : MonoBehaviour {
     public AudioSource no;
 
     public Text countText;
+    public Image ProgBar;
 	public Text rightwrong;
     private static int count;
     private bool ded;
@@ -36,6 +37,7 @@ public class ClientController : MonoBehaviour {
     public Text loseText;
     // Use this for initialization
     void Start () {
+        ProgBar.fillAmount = 0;
         count = 0;
         EndPanel.SetActive(false);
 
@@ -82,7 +84,7 @@ public class ClientController : MonoBehaviour {
 				served = true;
 				count = count + 1;
 				SetCountText ();
-            yes.Play();
+                yes.Play();
             
             
             
@@ -109,10 +111,16 @@ public class ClientController : MonoBehaviour {
     void SetCountText()
     {
         countText.text = "CLIENTS SERVED:  " + count.ToString();
+
+        if(count == 1 && level == 1)
+        {
+            ProgBar.fillAmount = 0.5f;
+        }
         if(count == 2 && level == 1)
         {
             //winText.text = "You Win!";
             //SceneManager.LoadScene(2);
+            ProgBar.fillAmount = 1;
             Time.timeScale = 0;
             EndPanel.SetActive(true);
         }

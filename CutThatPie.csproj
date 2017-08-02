@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ArrowAnim.cs" />
+    <Compile Include="Assets\BarCntrlr.cs" />
     <Compile Include="Assets\DragObject.cs" />
     <Compile Include="Assets\DragRigidBody2D\Examples\Scripts\BlockDragEvents.cs" />
     <Compile Include="Assets\DragRigidBody2D\Examples\Scripts\CameraFollow.cs" />

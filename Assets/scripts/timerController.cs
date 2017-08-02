@@ -29,6 +29,7 @@ public class timerController : MonoBehaviour {
 
     void Update()
     {
+        
         if (stop) return;
         timeLeft -= Time.deltaTime;
 
@@ -43,6 +44,7 @@ public class timerController : MonoBehaviour {
             minutes = 0;
             seconds = 0;
         }
+        text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
         //        fraction = (timeLeft * 100) % 100;
     }
 
@@ -50,7 +52,7 @@ public class timerController : MonoBehaviour {
     {
         while (!stop)
         {
-            text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            //text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
             yield return new WaitForSeconds(0.2f);
         }
     }
