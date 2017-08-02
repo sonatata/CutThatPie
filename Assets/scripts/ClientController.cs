@@ -205,7 +205,7 @@ public class ClientController : MonoBehaviour {
         {
             //winText.text = "You Win!";
             ProgBar.fillAmount = 1;
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
 
     }
