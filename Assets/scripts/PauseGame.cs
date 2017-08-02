@@ -52,6 +52,12 @@ public class PauseGame : MonoBehaviour {
         Time.timeScale = 1;
     }
 
+    public void GoToLevel3()
+    {
+        SceneManager.LoadScene(4);
+        Time.timeScale = 1;
+    }
+
     public void BackToMain()
     {
         SceneManager.LoadScene(0);

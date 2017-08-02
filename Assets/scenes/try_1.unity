@@ -3026,7 +3026,7 @@ MonoBehaviour:
   wrong: {fileID: 1133090940400630, guid: 46f32f0db983bb84c8e603a80621a2bf, type: 2}
   want: half
   speed: 1.2
-  level: 1
+  level: 0
   yes: {fileID: 1537047717}
   no: {fileID: 1537047716}
   countText: {fileID: 484298892}

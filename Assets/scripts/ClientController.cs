@@ -14,7 +14,7 @@ public class ClientController : MonoBehaviour {
     public GameObject wrong;
     public string want;
     public float speed;
-    public static int level;
+    public int level;
 	private bool served;
 	private bool wronged;
 	private bool displaymessage;
@@ -72,6 +72,7 @@ public class ClientController : MonoBehaviour {
 		if (displayTime <= 0.0f) {
 			displaymessage = false;
 		}
+        
 	}
 
     private void OnTriggerEnter2D(Collider2D other)

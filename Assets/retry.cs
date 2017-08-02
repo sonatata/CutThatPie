@@ -13,7 +13,7 @@ public class retry : MonoBehaviour {
     void OnMouseUp()
     {
         
-        SceneManager.LoadScene(ClientController.level +1);
+        SceneManager.LoadScene(1);
     }
 
     public void newlevel()
