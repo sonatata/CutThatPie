@@ -52,7 +52,7 @@ public class timerController : MonoBehaviour {
     {
         while (!stop)
         {
-            //text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
             yield return new WaitForSeconds(0.2f);
         }
     }

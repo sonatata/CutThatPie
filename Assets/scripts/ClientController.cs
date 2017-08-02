@@ -124,9 +124,27 @@ public class ClientController : MonoBehaviour {
             Time.timeScale = 0;
             EndPanel.SetActive(true);
         }
+
+        if (count == 1 && level == 2)
+        {
+            ProgBar.fillAmount = 0.25f;
+        }
+
+        if (count == 2 && level == 2)
+        {
+            ProgBar.fillAmount = 0.5f;
+        }
+
+        if (count == 3 && level == 2)
+        {
+            ProgBar.fillAmount = 0.75f;
+        }
+
+
         if (count == 4 && level == 2)
         {
             //winText.text = "You Win!";
+            ProgBar.fillAmount = 1;
             SceneManager.LoadScene(5);
         }
     }
