@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61724652144867504}
   m_Layer: 0
   m_Name: qrtr_pie 2
-  m_TagString: qrtr
+  m_TagString: 3/4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

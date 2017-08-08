@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class retry : MonoBehaviour {
 
+    private GameObject lvls;
+
     void OnMouseDown()
     {
         transform.localScale *= 1.1F;
@@ -12,8 +14,10 @@ public class retry : MonoBehaviour {
 
     void OnMouseUp()
     {
-        
-        SceneManager.LoadScene(1);
+        lvls = GameObject.Find("LvlSys");
+        //lvls.GetComponent<LevelCntrl>().level += 1;
+        SceneManager.LoadScene(lvls.GetComponent<LevelCntrl>().level);
+        //SceneManager.LoadScene(1);
     }
 
     public void newlevel()

@@ -8,6 +8,7 @@ public class CutController : MonoBehaviour {
     //public GameObject qrtr;
     //public GameObject eth;
     public GameObject roundPiePrefab;
+    public GameObject roundPiePrefab1;
     public GameObject fullpie;
     public GameObject instance;
     public GameObject glass;
@@ -24,7 +25,7 @@ public class CutController : MonoBehaviour {
     private Vector2 _centre;
     private float _angle;
     
-
+    
     
 
 
@@ -32,10 +33,20 @@ public class CutController : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("cuttingBoard"))
         {
-            Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
+            if (GameObject.Find("LvlSys").GetComponent<LevelCntrl>().level == 1)
+            {
+                Instantiate(roundPiePrefab1, new Vector2(0, 0), Quaternion.identity);
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                Instantiate(roundPiePrefab, new Vector2(0, 0), Quaternion.identity);
 
             //destroys pie colliding with knife 
             Destroy(this.gameObject);
+
+            }
+            
         }
 
         if (other.gameObject.CompareTag("wall"))

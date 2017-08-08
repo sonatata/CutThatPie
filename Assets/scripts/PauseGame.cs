@@ -7,6 +7,7 @@ public class PauseGame : MonoBehaviour {
     public Transform canvas;
     public bool pressed;
     private pausebutton script;
+    private GameObject lvls;
 
 
 	// Use this for initialization
@@ -42,7 +43,9 @@ public class PauseGame : MonoBehaviour {
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(2);
+        lvls = GameObject.Find("LvlSys");
+        lvls.GetComponent<LevelCntrl>().level += 1;
+        SceneManager.LoadScene(lvls.GetComponent<LevelCntrl>().level);
         Time.timeScale = 1;
     }
 

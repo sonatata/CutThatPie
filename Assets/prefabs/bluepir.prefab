@@ -101,9 +101,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundPiePrefab: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d,
     type: 2}
+  roundPiePrefab1: {fileID: 1804868259389858, guid: 3c164c5d0e0169f4bae550e26bc045d0,
+    type: 2}
   fullpie: {fileID: 1563541781169120}
   instance: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
   glass: {fileID: 0}
+  placeholder: {fileID: 0}
   speed: 150
   amount: 0
 --- !u!212 &212298057631613824

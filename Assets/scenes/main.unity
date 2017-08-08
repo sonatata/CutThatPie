@@ -626,6 +626,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4398470605879306, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398470605879306, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793176417235184, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793176417235184, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
   m_IsPrefabParent: 0
@@ -754,6 +770,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08cda8a67d806e4fba79c9b7da71dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  half: {fileID: 0}
+  qrtr: {fileID: 0}
+  eth: {fileID: 0}
+  threeeth: {fileID: 0}
+  sth: {fileID: 0}
+  thrqrtr: {fileID: 0}
+  fiveeth: {fileID: 0}
+  go: {fileID: 0}
+  exit: {fileID: 0}
+  glass: {fileID: 0}
   knife: {fileID: 406158834}
 --- !u!50 &406158836
 Rigidbody2D:

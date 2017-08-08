@@ -17,9 +17,11 @@ public class gamescript : MonoBehaviour {
 
     public GameObject glass;
 
+    //List<GameObject> DeadList = new List<GameObject>();
 	Vector3 screenPoint;
 	Vector3 offset;
-	private List<GameObject> objlist = new List<GameObject>();
+    private List<GameObject> objlist = new List<GameObject>();
+    public GameObject[] DeadList;
     public GameObject knife;
 	private GameObject lasthit;
 	void Start () {
@@ -61,31 +63,91 @@ public class gamescript : MonoBehaviour {
 			rend.enabled = true;
 			objlist.Add(collision.gameObject);
 		}
-		//Debug.Log ("here");
-		//Debug.Log(collision.gameObject.transform.parent.gameObject.name);
+        //Debug.Log ("here");
+        //Debug.Log(collision.gameObject.transform.parent.gameObject.name);
 
-		//else if (objlist.Contains(collision.gameObject.transform.parent.gameObject)){
-			
-		//	SpriteRenderer rend = collision.gameObject.GetComponent<SpriteRenderer>();
-		//	rend.enabled = true;
-		//	objlist.Add(collision.gameObject);
-		//	if (collision.gameObject.CompareTag("invisible"))
-		//	{
-		//		collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-		//	}
-			if (collision.gameObject.CompareTag("checkpoint"))
-			{
+        //else if (objlist.Contains(collision.gameObject.transform.parent.gameObject)){
 
+        //	SpriteRenderer rend = collision.gameObject.GetComponent<SpriteRenderer>();
+        //	rend.enabled = true;
+        //	objlist.Add(collision.gameObject);
+        //	if (collision.gameObject.CompareTag("invisible"))
+        //	{
+        //		collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        //	}
+        if (collision.gameObject.CompareTag("checkpoint"))
+        {
+
+            
+            DeadList = GameObject.FindGameObjectsWithTag("half");
+            Debug.Log(DeadList.ToString());
+            if (DeadList.Length > 0)
+            {
+                for (int i = 0; i < DeadList.Length - 1; i++)
+                {
+                    Destroy(DeadList[i]);
+                }
+            }
+            DeadList = GameObject.FindGameObjectsWithTag("qrtr");
+            if (DeadList.Length > 0)
+                {
+                    for (int i = 0; i < DeadList.Length - 1; i++)
+                    {
+                        Destroy(DeadList[i]);
+                    }
+             }
+            DeadList = GameObject.FindGameObjectsWithTag("8th");
+            if (DeadList.Length > 0)
+                    {
+                        for (int i = 0; i < DeadList.Length - 1; i++)
+                        {
+                            Destroy(DeadList[i]);
+                        }
+            }
+            DeadList = GameObject.FindGameObjectsWithTag("3/8");
+            if (DeadList.Length > 0)
+                        {
+                            for (int i = 0; i < DeadList.Length - 1; i++)
+                            {
+                                Destroy(DeadList[i]);
+                            }
+            }
+            DeadList = GameObject.FindGameObjectsWithTag("3/4");
+            if (DeadList.Length > 0)
+                            {
+                                for (int i = 0; i < DeadList.Length - 1; i++)
+                                {
+                                    Destroy(DeadList[i]);
+                                }
+            }
+            DeadList = GameObject.FindGameObjectsWithTag("7/8");
+            if (DeadList.Length > 0)
+            {
+                                    for (int i = 0; i < DeadList.Length - 1; i++)
+                                    {
+                                        Destroy(DeadList[i]);
+                                    }
+            }
+            DeadList = GameObject.FindGameObjectsWithTag("5/8");
+            if (DeadList.Length > 0)
+                                    {
+                                        for (int i = 0; i < DeadList.Length - 1; i++)
+                                        {
+                                            Destroy(DeadList[i]);
+                                        }
+
+            }
+                                
             SpriteRenderer rend = glass.gameObject.GetComponent<SpriteRenderer>();
             rend.enabled = false;
 
             if (collision.gameObject.name == "1/2")
 					{
-                    Debug.Log(" 1/2 collision detected");
 						Destroy(go);
 						//Instantiate(half, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
+                      
 						Instantiate(half, new Vector2(-7f,-2.8f ), Quaternion.identity);
-                Instantiate(half, new Vector2(-5f, -2.8f), Quaternion.identity);
+                        Instantiate(half, new Vector2(-5f, -2.8f), Quaternion.identity);
                 //Instantiate(plate, new Vector2(plate.transform.position.x, plate.transform.position.y), Quaternion.identity);
                 //Instantiate(thanks, new Vector2(fraction.transform.position.x, fraction.transform.position.y), Quaternion.identity);
                 //flag = true;
@@ -93,6 +155,7 @@ public class gamescript : MonoBehaviour {
 					if (collision.gameObject.name == "1/4")
 					{
 						Destroy(go);
+                        
 						Instantiate(qrtr, new Vector2(-7.1f, -2.5f), Quaternion.identity);
                         Instantiate(thrqrtr, new Vector2(-5.1f, -2.5f), Quaternion.identity);
                 //flag = true;

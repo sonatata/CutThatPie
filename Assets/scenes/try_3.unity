@@ -1896,6 +1896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1410784467}
   pressed: 0
+  lvls: {fileID: 1770001692987146, guid: 5015ea5a4da150f489f58e59a01af639, type: 2}
 --- !u!4 &652713371
 Transform:
   m_ObjectHideFlags: 0
@@ -2865,7 +2866,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 652713370}
-        m_MethodName: GoToLevel3
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6002,6 +6003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1410784467}
   pressed: 0
+  lvls: {fileID: 0}
 --- !u!114 &1976625705
 MonoBehaviour:
   m_ObjectHideFlags: 0
