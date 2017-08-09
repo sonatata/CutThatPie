@@ -1927,7 +1927,7 @@ GameObject:
   - component: {fileID: 654031800}
   - component: {fileID: 654031799}
   m_Layer: 0
-  m_Name: 6/12
+  m_Name: 6/16
   m_TagString: client
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   pie: {fileID: 2009837927}
   thanks: {fileID: 1823114924972246, guid: cdc6f7a07a0457f48b324b51136bc67c, type: 2}
   wrong: {fileID: 1133090940400630, guid: 46f32f0db983bb84c8e603a80621a2bf, type: 2}
-  want: qrtr
+  want: 3/8
   speed: 1.2
   level: 4
   yes: {fileID: 654031800}
@@ -4644,7 +4644,7 @@ SpriteRenderer:
   m_SortingLayerID: 1453314609
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 304188054fde68c47ae678af998b9074, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f6105dc240089345a852408a78ab739, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6303,7 +6303,7 @@ MonoBehaviour:
   pie: {fileID: 1460824812}
   thanks: {fileID: 1823114924972246, guid: cdc6f7a07a0457f48b324b51136bc67c, type: 2}
   wrong: {fileID: 1133090940400630, guid: 46f32f0db983bb84c8e603a80621a2bf, type: 2}
-  want: qrtr
+  want: 8th
   speed: 1.2
   level: 4
   yes: {fileID: 2006147447}
@@ -6807,7 +6807,7 @@ SpriteRenderer:
   m_SortingLayerID: 1453314609
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: eb5c36b8d819f5f4d8023c2666badb53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84443a6ed4c864c4ca287b79e65fcf55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
