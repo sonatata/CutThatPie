@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/tutog.unity
+- path: Assets/scenes/scsen_6(mixup1).unity
   isLoaded: 1
   isActive: 1

@@ -92,7 +92,7 @@ public class ClientController : MonoBehaviour {
 				SetCountText ();
                 yes.Play();
             
-            
+            // 4/8, 5/20, 2/16, 6/16, 6/8
             
             //arrow3.SetActive(true);
 
@@ -146,31 +146,51 @@ public class ClientController : MonoBehaviour {
 
         if (count == 1 && level == 2)
         {
-            ProgBar.fillAmount = 0.2f;
+            ProgBar.fillAmount = 0.125f;
         }
 
         if (count == 2 && level == 2)
         {
-            ProgBar.fillAmount = 0.4f;
+            ProgBar.fillAmount = 0.125f * 2;
         }
 
         if (count == 3 && level == 2)
         {
-            ProgBar.fillAmount = 0.6f;
+            ProgBar.fillAmount = 0.125f * 3;
         }
 
 
         if (count == 4 && level == 2)
         {
             //winText.text = "You Win!";
-            ProgBar.fillAmount = 0.8f;
+            ProgBar.fillAmount = 0.125f * 4;
 
         }
 
         if (count == 5 && level == 2)
         {
             //winText.text = "You Win!";
-            ProgBar.fillAmount = 1;
+            ProgBar.fillAmount = 0.125f * 5;
+            //SceneManager.LoadScene(5);
+        }
+        if (count == 6 && level == 2)
+        {
+            //winText.text = "You Win!";
+            ProgBar.fillAmount = 0.125f * 6;
+            //SceneManager.LoadScene(5);
+        }
+
+        if (count == 7 && level == 2)
+        {
+            //winText.text = "You Win!";
+            ProgBar.fillAmount = 0.125f * 7;
+            //SceneManager.LoadScene(5);
+        }
+
+        if (count == 8 && level == 2)
+        {
+            //winText.text = "You Win!";
+            ProgBar.fillAmount = 0.125f * 8;
             Time.timeScale = 0;
             EndPanel.SetActive(true);
             //SceneManager.LoadScene(5);
@@ -180,33 +200,90 @@ public class ClientController : MonoBehaviour {
 
         if (count == 1 && level == 3)
         {
-            ProgBar.fillAmount = 0.2f;
+            ProgBar.fillAmount = 0.25f;
         }
 
         if (count == 2 && level == 3)
         {
-            ProgBar.fillAmount = 0.4f;
+            ProgBar.fillAmount = 0.5f;
         }
 
         if (count == 3 && level == 3)
         {
-            ProgBar.fillAmount = 0.6f;
+            ProgBar.fillAmount = 0.75f;
         }
 
 
         if (count == 4 && level == 3)
         {
             //winText.text = "You Win!";
-            ProgBar.fillAmount = 0.8f;
+            ProgBar.fillAmount = 1;
+            Time.timeScale = 0;
+            EndPanel.SetActive(true);
 
         }
 
-        if (count == 5 && level == 3)
+        // level 4
+        if (count == 1 && level == 4)
+        {
+            ProgBar.fillAmount = 0.25f;
+        }
+
+        if (count == 2 && level == 4)
+        {
+            ProgBar.fillAmount = 0.5f;
+        }
+
+        if (count == 3 && level == 4)
+        {
+            ProgBar.fillAmount = 0.75f;
+        }
+
+
+        if (count == 4 && level == 4)
         {
             //winText.text = "You Win!";
             ProgBar.fillAmount = 1;
-            SceneManager.LoadScene(5);
+            Time.timeScale = 0;
+             EndPanel.SetActive(true);
+
         }
+
+        //level 5
+        if (count == 1 && level == 5)
+        {
+            ProgBar.fillAmount = 0.2f * count;
+        }
+
+        if (count == 2 && level == 5)
+        {
+            ProgBar.fillAmount = 0.2f * count;
+        }
+
+        if (count == 3 && level == 5)
+        {
+            ProgBar.fillAmount = 0.2f * count;
+        }
+
+
+        if (count == 4 && level == 5)
+        {
+            //winText.text = "You Win!";
+            ProgBar.fillAmount = 0.2f * count;
+
+        }
+
+        if (count == 5 && level == 5)
+        {
+            //winText.text = "You Win!";
+            ProgBar.fillAmount = 1;
+            Time.timeScale = 0;
+            SceneManager.LoadScene(7);
+           
+
+        }
+
+
 
     }
 	void OnGUI() {

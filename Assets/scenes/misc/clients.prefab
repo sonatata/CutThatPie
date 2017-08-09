@@ -1527,6 +1527,7 @@ MonoBehaviour:
   yes: {fileID: 82955194098248660}
   no: {fileID: 82237552678329436}
   countText: {fileID: 0}
+  ProgBar: {fileID: 0}
   rightwrong: {fileID: 0}
   EndPanel: {fileID: 0}
   winText: {fileID: 0}
@@ -1554,6 +1555,7 @@ MonoBehaviour:
   yes: {fileID: 82836283423734646}
   no: {fileID: 82664491848406422}
   countText: {fileID: 0}
+  ProgBar: {fileID: 0}
   rightwrong: {fileID: 0}
   EndPanel: {fileID: 0}
   winText: {fileID: 0}
@@ -1581,6 +1583,7 @@ MonoBehaviour:
   yes: {fileID: 82253323786555356}
   no: {fileID: 82036645914372084}
   countText: {fileID: 0}
+  ProgBar: {fileID: 0}
   rightwrong: {fileID: 0}
   EndPanel: {fileID: 0}
   winText: {fileID: 0}
@@ -1608,6 +1611,7 @@ MonoBehaviour:
   yes: {fileID: 82218464856268622}
   no: {fileID: 82994129581982508}
   countText: {fileID: 0}
+  ProgBar: {fileID: 0}
   rightwrong: {fileID: 0}
   EndPanel: {fileID: 0}
   winText: {fileID: 0}
@@ -1635,6 +1639,7 @@ MonoBehaviour:
   yes: {fileID: 82443336135104004}
   no: {fileID: 82612760993603136}
   countText: {fileID: 0}
+  ProgBar: {fileID: 0}
   rightwrong: {fileID: 0}
   EndPanel: {fileID: 0}
   winText: {fileID: 0}

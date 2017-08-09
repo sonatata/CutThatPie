@@ -627,6 +627,10 @@ Prefab:
       propertyPath: m_Name
       value: tutpieprfab
       objectReference: {fileID: 0}
+    - target: {fileID: 1804868259389858, guid: 3c164c5d0e0169f4bae550e26bc045d0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c164c5d0e0169f4bae550e26bc045d0, type: 2}
   m_IsPrefabParent: 0
@@ -672,10 +676,6 @@ Prefab:
     - target: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
       propertyPath: m_Name
       value: round_pie_cut (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1804868259389858, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aede3d654c8332947bfad8b54f0cf75d, type: 2}
