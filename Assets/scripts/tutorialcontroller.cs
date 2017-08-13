@@ -129,7 +129,7 @@ public class tutorialcontroller : MonoBehaviour {
 				txt.text = "Drag the golden pie to your first customer!";
 				//displayTime = 0.0f;
 			} else if (m3) {
-				txt.text = "Pay attention to the top left panel to track your progress!";
+				txt.text = "Pay attention to the top panel to track your progress!";
 				//Destroy (client1);
 				//displayTime = 0.0f;
 			} else if (m4) {

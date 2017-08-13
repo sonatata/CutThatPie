@@ -46,7 +46,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ArrowAnim.cs" />
+     <Compile Include="Assets\BarCntrlr.cs" />
+     <Compile Include="Assets\DragObject.cs" />
+     <Compile Include="Assets\DragRigidBody2D\Examples\Scripts\BlockDragEvents.cs" />
+     <Compile Include="Assets\DragRigidBody2D\Examples\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\DragRigidBody2D\Scripts\DragRigidBody2D.cs" />
+     <Compile Include="Assets\ExitMode.cs" />
+     <Compile Include="Assets\LevelCntrl.cs" />
+     <Compile Include="Assets\backgroundMusic.cs" />
      <Compile Include="Assets\prefabManager.cs" />
+     <Compile Include="Assets\retry.cs" />
+     <Compile Include="Assets\scripts\AnimatedText.cs" />
      <Compile Include="Assets\scripts\CameraController.cs" />
      <Compile Include="Assets\scripts\ClientController.cs" />
      <Compile Include="Assets\scripts\CutController.cs" />
@@ -63,6 +74,12 @@
      <Compile Include="Assets\scripts\slice_display.cs" />
      <Compile Include="Assets\scripts\timerController.cs" />
      <Compile Include="Assets\scripts\traceContrlr.cs" />
+     <Compile Include="Assets\scripts\tutorialcontroller.cs" />
+     <Compile Include="Assets\trahs.cs" />
+     <Compile Include="Assets\trash.cs" />
+     <Compile Include="Assets\tut.cs" />
+     <Compile Include="Assets\tutTrigger.cs" />
+     <None Include="Assets\DragRigidBody2D\readme_v0.6.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
