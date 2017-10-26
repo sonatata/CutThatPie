@@ -16,6 +16,8 @@ APK build is found under [cutThatPie/builds](https://github.com/sonatata/CutThat
 
 NOTE: please make sure your device in horizontal mode!
 
+If you would like to view source code refer to the [Assets](https://github.com/sonatata/CutThatPie/tree/master/Assets/scripts) folder
+
 ## Built With
 
 * [Unity](https://unity3d.com/) - The game engine used/ c# for backend development and scripts
